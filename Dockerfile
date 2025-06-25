@@ -124,7 +124,8 @@ ENV MC_SKIN=dark
 
 #-------------------------------------------------------------------------------
 # Optional Settings
-RUN echo "sorce ~/esp/esp-idf/export.sh" >> /root/.bashrc
+RUN echo "sorce ~/esp/esp-idf/export.sh" >> /root/.bashrc && \
+    echo "export IDF_PATH=~/esp/esp-idf" >> /root/.bashrc
 
 # Set working directory for the user
 COPY scripts/entrypoint.sh /entrypoint.sh
