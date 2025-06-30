@@ -3,7 +3,8 @@
 
 # Settings
 ARG DEBIAN_VERSION=stable-20241016-slim
-ARG PASSWORD="ESP32S3development"
+ARG PASSWORD="Jannuel2001!"
+# ESP32S3development
 ARG ESP32_MODEL=esp32s3
 ARG ESP_SDK_VERSION=v5.4.2
 ARG WGET_ARGS="-q --show-progress --progress=bar:force:noscroll"
@@ -124,7 +125,8 @@ ENV MC_SKIN=dark
 
 #-------------------------------------------------------------------------------
 # Optional Settings
-RUN echo "source ~/esp/esp-idf/export.sh" >> /root/.bashrc && \
+
+RUN echo 'if [[ $- == *i* ]]; then source ~/esp/esp-idf/export.sh; fi' >> /root/.bashrc && \
     echo "export IDF_PATH=~/esp/esp-idf" >> /root/.bashrc
 
 # Set working directory for the user
