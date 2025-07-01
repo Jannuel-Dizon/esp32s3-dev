@@ -3,8 +3,7 @@
 
 # Settings
 ARG DEBIAN_VERSION=stable-20241016-slim
-ARG PASSWORD="Jannuel2001!"
-# ESP32S3development
+ARG PASSWORD="ESP32S3development"
 ARG ESP32_MODEL=esp32s3
 ARG ESP_SDK_VERSION=v5.4.2
 ARG WGET_ARGS="-q --show-progress --progress=bar:force:noscroll"
