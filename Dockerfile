@@ -74,6 +74,8 @@ RUN apt-get -y update && \
     openssh-server \
     clangd
 
+RUN pip3 install --no-cache-dir mpremote --break-system-packages
+
 # Set root password
 RUN echo "root:${PASSWORD}" | chpasswd
 
